@@ -1,10 +1,17 @@
 # Introduction
-This notebook have different type of machine translation models starting from simple models to advanced models with good accuracy.
+In this notebook, you will build a deep neural network that functions as part of an end-to-end machine translation pipeline. Your completed pipeline will accept English text as input and return the French translation.
 
-The model trained on small data to translate from English language to French, it can be expanded to train on more data or translate other languages.
-
-This end-to-end machine translation pipeline delivered as final project for Udacity AI Nanodegree course.
 # Setup
+
+This project requires GPU acceleration to run efficiently. Support is available to use either of the following two methods for accessing GPU-enabled cloud computing resources.
+
+## Udacity Workspaces (Recommended)
+
+Udacity Workspaces provide remote connection to GPU-enabled instances right from the classroom. Refer to the classroom lesson for this project to find an overview of navigating & using Jupyter notebook Workspaces.
+
+## Amazon Web Services (Optional)
+
+Please refer to the Udacity instructions for setting up a GPU instance for this project, and refer to the project instructions in the classroom for setup. The recommended AMI should include compatible versions of all required software and libraries to complete the project. [link for AIND students](https://classroom.udacity.com/nanodegrees/nd889/parts/16cf5df5-73f0-4afa-93a9-de5974257236/modules/53b2a19e-4e29-4ae7-aaf2-33d195dbdeba/lessons/2df3b94c-4f09-476a-8397-e8841b147f84/project)
 
 ## Install
 - Python 3
@@ -12,24 +19,23 @@ This end-to-end machine translation pipeline delivered as final project for Udac
 - TensorFlow 1.x
 - Keras 2.x
 
-# Start
-This project is within a [Jupyter Notebook](http://jupyter.org/).  To start the notebook, run the command `jupyter notebook machine_translation.ipynb` in this directory.
-Follow the instructions within the notebook.
+# Submission
+When you are ready to submit your project, do the following steps:
+1. Ensure you pass all points on the [rubric](https://review.udacity.com/#!/rubrics/1004/view).
+2. Submit the following in a zip file:
+  - `helper.py`
+  - `machine_translation.ipynb`
+  - `machine_translation.html`
 
-# Models
-Following training accuracy achieved With only 20 epochs:<br/>
-1. Simple Model: 57% <br/>
-2. Embedding Model: 76% <br/>
-3. Bidirectional (No Embedding): 58% <br/>
-4. Encoder-Decoder Model: 68% <br/>
-5. **Final Model** (Multiple Techniques): 97.79% <br/>
-    *Final Model training accuracy reached 96.2% by the 10th epoch*
+## Converting to HTML
 
-# Thing to improve
-- Increase epoch for higher accuracy <br/>
-- Increase training data <br/>
-- Add more layers or more units for deeper understanding of data. <br/>
+There are several ways to generate an HTML copy of the notebook:
 
-# Contribution
-TODO and Implement parts in the notebook done by Ahmad Barqawi. <br/>
-Document strcure done by Udacity Team
+ - Running the last cell of the notebook will export an HTML copy
+
+ - Navigating to **File -> Download as -> HTML (.html)** within the notebook
+
+ - Using `nbconvert` from the command line
+
+    $ pip install nbconvert
+    $ nbconvert machine_translation.ipynb
